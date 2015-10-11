@@ -1,0 +1,27 @@
+#a nice test file
+
+
+#Here comes a Name:
+name:TestFile
+
+# and an age
+age:42
+# the parser only checks the first character of a line -
+# and than searches for the first ':'
+# all character after this up to the line end will be tried to interpret as value
+# so you can also write
+# a      :42
+
+
+# and some values 
+x:22; 65535; 42; 21; 17  ;  1234
+
+# this key is not known by the parser
+blubber: XXX
+
+
+# and just to explain : - lines that start with an # are comments.
+# and this two lines are also so long - they are not read till the end.
+# so check your lines with data - they are not designed to be to long ?! ;-)
+# END but will the last line with key:value also be parsed?
+end:5
